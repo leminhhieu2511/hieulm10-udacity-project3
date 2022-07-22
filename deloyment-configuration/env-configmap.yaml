@@ -11,4 +11,4 @@ data:
   POSTGRES_USERNAME: project3demo
   POSTGRES_PASSWORD: project3demo
   POSTGRES_HOST: project3demo.ceb8jel5yy24.us-east-1.rds.amazonaws.com
-  URL: https://11C0E3772F5753C45E72A2754853E337.yl4.us-east-1.eks.amazonaws.com
+  URL: https://A8D8133DC24FC2AB0CCAD60E0CC6FC1A.gr7.us-east-1.eks.amazonaws.com

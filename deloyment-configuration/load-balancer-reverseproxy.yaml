@@ -32,7 +32,7 @@ spec:
    
       containers:
    
-      - image: viethainguyentran/reverseproxy
+      - image: viethainguyentran/reverseproxy:v1
    
         name: reverseproxy
    

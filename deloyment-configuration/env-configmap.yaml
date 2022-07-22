@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: env-config
+data:
+  AWS_BUCKET: arn:aws:s3:::project-3-demo
+  AWS_PROFILE: default
+  AWS_REGION: us-east-1
+  JWT_SECRET: hello
+  POSTGRES_DB: project3demo
+  POSTGRES_USERNAME: project3demo
+  POSTGRES_PASSWORD: project3demo
+  POSTGRES_HOST: project3demo.ceb8jel5yy24.us-east-1.rds.amazonaws.com
+  URL: https://11C0E3772F5753C45E72A2754853E337.yl4.us-east-1.eks.amazonaws.com

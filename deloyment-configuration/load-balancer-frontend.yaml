@@ -32,10 +32,10 @@ spec:
    
       containers:
    
-      - image: gcr.io/google-samples/node-hello:1.0
+      - image: viethainguyentran/udagram-frontend
    
         name: frontend
    
         ports:
    
-        - containerPort: 8080
+        - containerPort: 80

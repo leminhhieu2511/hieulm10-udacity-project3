@@ -32,7 +32,7 @@ spec:
    
       containers:
    
-      - image: gcr.io/google-samples/node-hello:1.0
+      - image: viethainguyentran/reverseproxy
    
         name: reverseproxy
    

@@ -17,6 +17,8 @@ spec:
       containers:
       - image: viethainguyentran/udagram-api-feed:v1
         name: udagram-frontend
+        ports:
+        - containerPort: 80
         imagePullPolicy: Always
         envFrom:
         - configMapRef:

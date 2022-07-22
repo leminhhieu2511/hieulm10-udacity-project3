@@ -6,8 +6,9 @@ metadata:
     app: udagram-reverseproxy
 spec:
   ports:
-  - name: "8080"
-    port: 8080
+  - port: 8080
     targetPort: 8080
+    protocol: TCP
+    name: http
   selector:
     app: udagram-reverseproxy

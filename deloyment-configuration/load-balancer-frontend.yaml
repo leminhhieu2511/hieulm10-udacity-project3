@@ -6,9 +6,9 @@ metadata:
    
   labels:
    
-    app.kubernetes.io/name: load-balancer-frontend-project3
+    app.kubernetes.io/name: public-frontend
    
-  name: load-balancer-frontend
+  name: frontend
    
 spec:
    
@@ -18,7 +18,7 @@ spec:
    
     matchLabels:
    
-      app.kubernetes.io/name: load-balancer-frontend-project3
+      app.kubernetes.io/name: public-frontend
    
   template:
    
@@ -26,7 +26,7 @@ spec:
    
       labels:
    
-        app.kubernetes.io/name: load-balancer-frontend-project3
+        app.kubernetes.io/name: public-frontend
    
     spec:
    
@@ -34,7 +34,7 @@ spec:
    
       - image: gcr.io/google-samples/node-hello:1.0
    
-        name: load-balancer-frontend
+        name: frontend
    
         ports:
    

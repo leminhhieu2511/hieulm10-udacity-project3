@@ -2,8 +2,6 @@ apiVersion: v1
 kind: Service
 metadata:
   name: udagram-frontend-api-service
-  labels:
-    app: udagram-frontend-api
 spec:
   type: LoadBalancer
   ports:

@@ -15,63 +15,17 @@ spec:
         app: udagram-user-api
     spec:
       containers:
-      - image: viethainguyentran/udagram-api-feed:v1
-        name: udagram-user-api
-        imagePullPolicy: Always
-        resources:
-          requests:
-            memory: "64Mi"
-            cpu: "250m"
-          limits:
-            memory: "2048Mi"
-            cpu: "500m" 
+      - name: udagram-user-api
+        image: viethainguyentran/udagram-api-user:v1
+        ports:
+        - containerPort: 8080
         envFrom:
-        - configMapRef:
-            name: env-config
-        env:
-        - name: POSTGRES_USERNAME
-          valueFrom:
-            configMapKeyRef:
-              name: env-config
-              key: POSTGRES_USERNAME 
-        - name: POSTGRES_PASSWORD
-          valueFrom:
-            configMapKeyRef:
-              name: env-config
-              key: POSTGRES_PASSWORD
-        - name: POSTGRES_HOST
-          valueFrom:
-            configMapKeyRef:
-              name: env-config
-              key: POSTGRES_HOST
-        - name: POSTGRES_DB
-          valueFrom:
-            configMapKeyRef:
-              name: env-config
-              key: POSTGRES_DB
-        - name: AWS_BUCKET
-          valueFrom:
-            configMapKeyRef:
-              name: env-config
-              key: AWS_BUCKET
-        - name: AWS_REGION
-          valueFrom:
-            configMapKeyRef:
-              name: env-config
-              key: AWS_REGION
-        - name: AWS_PROFILE
-          valueFrom:
-            configMapKeyRef:
-              name: env-config
-              key: AWS_PROFILE
-        - name: JWT_SECRET
-          valueFrom:
-            configMapKeyRef:
-              name: env-config
-              key: AWS_PROFILE
-        - name: URL
-          valueFrom:
-            configMapKeyRef:
-              name: env-config
-              key: URL
-      restartPolicy: Always
+          - secretRef:
+              name: mysecret
+          - configMapRef:
+              name: config-secret
+        resources:
+          limits:
+            cpu: 500m
+          requests:
+            cpu: 200m

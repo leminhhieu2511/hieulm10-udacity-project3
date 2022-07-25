@@ -27,4 +27,4 @@ after_success:
   - docker push viethainguyentran/udagram-api-feed:v1
   - docker push viethainguyentran/udagram-api-user:v1
   - docker push viethainguyentran/udagram-frontend:v1
-  - docker push viethainguyentran/udagram-reverseproxy:v1
+  - docker push viethainguyentran/reverseproxy:v1

@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: udagram-frontend-api-service
+  name: udagram-frontend
 spec:
   type: LoadBalancer
   ports:
@@ -10,4 +10,4 @@ spec:
     protocol: TCP
     name: http
   selector:
-    app: udagram-frontend-api
+    app: udagram-frontend

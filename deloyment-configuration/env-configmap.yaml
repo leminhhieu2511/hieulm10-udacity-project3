@@ -3,7 +3,7 @@ kind: ConfigMap
 metadata:
   name: env-config
 data:
-  AWS_BUCKET: arn:aws:s3:::project-3-demo
+  AWS_BUCKET: project-3-demo
   AWS_PROFILE: default
   AWS_REGION: us-east-1
   JWT_SECRET: hello

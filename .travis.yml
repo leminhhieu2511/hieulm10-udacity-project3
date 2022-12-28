@@ -23,7 +23,7 @@ script:
   - docker tag reverseproxy baoth799/reverseproxy:v1
 
 after_success:
-  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+  - docker login -u=baoth799 -p=baohoaitran123456
   - docker push baoth799/udagram-api-feed:v1
   - docker push baoth799/udagram-api-user:v1
   - docker push baoth799/udagram-frontend:v1

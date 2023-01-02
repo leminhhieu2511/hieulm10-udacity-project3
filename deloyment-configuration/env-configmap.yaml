@@ -6,9 +6,10 @@ data:
   AWS_BUCKET: udacity-aws-project3-s3
   AWS_PROFILE: default
   AWS_REGION: us-west-1
-  JWT_SECRET: testing
+  JWT_SECRET: Th1s1sR4nd0mS3cr3t
   POSTGRES_DB: postgres
   POSTGRES_USERNAME: hieulm10
   POSTGRES_PASSWORD: adminHieu
   POSTGRES_HOST: hieulm10-rds.czcehnlvbzi7.us-west-1.rds.amazonaws.com
   URL: http://localhost:8100
+  NODE_OPTIONS: --max-old-space-size=1024
